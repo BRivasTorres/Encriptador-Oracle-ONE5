@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Encryptor</title>
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="main">
+            <div class="text">
+                <textarea name="encryptext" id="textReceived" cols="30" rows="25" class="text-area-main"
+                    placeholder="Enter the text here:"></textarea>
+            </div>
+
+            <div class="buttons">
+                <p>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Only lowercase letters and no accents
+                </p>
+                <button id="encrypt" class="encrypt btn-styles">Encrypt</button>
+                <button id="decrypt" class="decrypt btn-styles">Decript</button>
+            </div>
+        </div>
+        <div class="decryptor">
+            <div class="decreptor-wrapper">
+                <div class="decryptor-empty">
+                    <p><em>No message was found</em></p>
+                    <p>Enter the text you want to encrypt or decrypt</p>
+                </div>
+
+                <div class="decryptor-fill">
+                    <textarea name="" id="text-area-decryptor" cols="26" rows="20" class="text-area-decryptor"
+                        placeholder="Result:"></textarea>
+                    <button id="copy" class="copy btn-styles">Copy</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
